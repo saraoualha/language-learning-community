@@ -17,8 +17,6 @@ The app follows Clean Architecture principles, split into three layers:
 - **data** — Retrofit API client, Room database, PagingSource, and the concrete repository implementation. Knows how to fetch and store data.
 - **ui** — ViewModel and Compose UI. Observes data from the domain layer and renders it. Never talks to the data layer directly.
 
-Dependencies point inward — data and ui both depend on domain, but domain depends on nothing. This makes the business logic independently testable.
-
 ## How to Run
 
 1. Clone the repository
