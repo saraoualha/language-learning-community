@@ -12,8 +12,12 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ThumbUp
+import androidx.compose.material.icons.outlined.ThumbUp
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -136,9 +140,10 @@ fun MemberCard(
                         LanguageChip(label = "LEARNS", codes = member.learns)
                     }
                     IconButton(onClick = onLikeClicked) {
-                        Text(
-                            text = if (member.isLiked) "👍🎉" else "👍",
-                            fontSize = 20.sp
+                        Icon(
+                            imageVector = if (member.isLiked) Icons.Filled.ThumbUp else Icons.Outlined.ThumbUp,
+                            contentDescription = if (member.isLiked) "Unlike" else "Like",
+                            tint = if (member.isLiked) Color(0xFF4DD0C4) else Color.Gray
                         )
                     }
                 }

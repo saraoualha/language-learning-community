@@ -55,6 +55,8 @@ dependencies {
     implementation("com.squareup.retrofit2:retrofit:2.11.0")
     implementation("com.squareup.retrofit2:converter-gson:2.11.0")
 
+    implementation("androidx.compose.material:material-icons-extended:1.7.8")
+
     // image loading: loads member profile pictures from URLs
     implementation("io.coil-kt:coil-compose:2.6.0")
 

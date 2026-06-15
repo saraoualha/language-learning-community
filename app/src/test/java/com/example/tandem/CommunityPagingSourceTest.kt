@@ -1,13 +1,10 @@
 package com.example.tandem
 
-import androidx.paging.PagingConfig
 import androidx.paging.PagingSource
-import androidx.paging.PagingState
 import com.example.tandem.data.CommunityApiService
 import com.example.tandem.data.CommunityPagingSource
 import com.example.tandem.data.CommunityResponse
 import com.example.tandem.data.MemberDto
-import com.example.tandem.domain.Member
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.*
 import org.junit.Test
